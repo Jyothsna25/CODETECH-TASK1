@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Performing Calculations</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+        input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        input[type="submit"][value="+"] {
+            background-color: #4CAF50;
+        }
+        input[type="submit"][value="-"] {
+            background-color: #f44336;
+        }
+        input[type="submit"][value="*"] {
+            background-color: #2196F3;
+        }
+        input[type="submit"][value="/"] {
+            background-color: #FFC107;
+        }
+        input[type="submit"][value="%"] {
+            background-color: #9C27B0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CALCULATIONS</h1>
+        <form method="get" action="./CalculatorServlet">
+            <label for="first">First Number</label>
+            <input type="number" id="first" name="first" required>
+            <br>
+            <label for="second">Second Number</label>
+            <input type="number" id="second" name="second" required>
+            <br>
+            <label>Operation</label>
+            <input type="submit" value="+" name="operation">
+            <input type="submit" value="-" name="operation">
+            <input type="submit" value="*" name="operation">
+            <input type="submit" value="/" name="operation">
+            <input type="submit" value="%" name="operation">
+        </form>
+    </div>
+</body>
+</html>
