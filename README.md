@@ -8,6 +8,7 @@
 ## Overview of the Project
 
 ### Project: Calculator
+![Screenshot (78)](https://github.com/Jyothsna25/CODTECH-TASK1/assets/160406602/7c21a4d8-c6a4-4f82-9dd7-a1b1d58d63c3)
 
 ### **Objective:** <br>
 The objective of this calculator app project is to develop a 
